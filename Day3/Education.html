@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" name="author" content="Muthukumaran" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Education</title>
+    <style>
+        table{
+            text-align:center;
+            width:1065px;
+            height:300px;
+        }
+        .card-body{
+            width:70%;
+        }
+        body{
+            background-color:darkgrey;
+        }
+        .card-header{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-tabs navbar-expand-sm bg-dark navbar-dark justify-content-end">
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="Education.html">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="Career.html">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="Resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="Contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+        </nav>
+    </div>
+    <div class="container">
+        <h2>About Acadamics</h2>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        Post-Graduation
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <table class="table-striped table-hover table-active">
+                            <tr>
+                                <td>COURSE</td>
+                                <td>MCA(Master of Computer Application)</td>
+                            </tr>
+                            <tr>
+                                <td>COLLEGE</td>
+                                <td>PSNA College of Engineering and Technology</td>
+                            </tr>
+                            <tr>
+                                <td>CITY</td>
+                                <td>Dindigul,Tamil Nadu-624001</td>
+                            </tr>
+                            <tr>
+                                <td>CGPA</td>
+                                <td>7.2 out of 10</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        Under-Graduation
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <table class="table-striped table-hover table-active">
+                            <tr>
+                                <td>COURSE</td>
+                                <td>B.Sc(Bachelor of Computer Science)</td>
+                            </tr>
+                            <tr>
+                                <td>COLLEGE</td>
+                                <td>NMSSVN College of Arts and Science</td>
+                            </tr>
+                            <tr>
+                                <td>CITY</td>
+                                <td>Madurai,Tamil Nadu-624001</td>
+                            </tr>
+                            <tr>
+                                <td>CGPA</td>
+                                <td>6.5 out of 10</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        High-Schools
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <table class="table-striped table-hover table-active">
+                            <tr>
+                                <td>COURSE</td>
+                                <td>HIGHER SECONDARY</td>
+                            </tr>
+                            <tr>
+                                <td>SCHOOL</td>
+                                <td>HOLY ANGEL HIGHER SECONDARY SCHOOL</td>
+                            </tr>
+                            <tr>
+                                <td>CITY</td>
+                                <td>Madurai,Tamil Nadu-625010</td>
+                            </tr>
+                            <tr>
+                                <td>CGPA</td>
+                                <td>7.0 out of 10</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
