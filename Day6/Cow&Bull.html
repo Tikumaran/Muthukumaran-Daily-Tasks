@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Cow and Bull</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnWSubmit").click(function () {
+                if ($("#txtWord").val() == "") {
+                    alert("Please Enter The Word");
+                    $("#txtWord").css("border-color", "red");
+                }
+                else {
+                    $("#txtWord").css("visibility", "hidden");
+                    $("#btnWSubmit").css("visibility", "hidden");
+                    $("#txtWord2").css({
+                        "visibility" : "visible",
+                        
+                    });
+                    $("#txtWord2").attr("placeholder", "Guess the " + ($("#txtWord").val()).length + " Letter Word")
+                    $("#btnGWSubmit").css("visibility", "visible");
+                    $("#btnRestart").css("visibility", "visible");
+
+                }
+            })
+            $("#btnGWSubmit").click(function () {
+                var UserWord = $("#txtWord").val();
+                var len = UserWord.length;
+                var ClientWord = $("#txtWord2").val();
+                var Clen = ClientWord.length;
+                var COW = 0;
+                var BULL = 0;
+                /*console.log(UserWord);
+                console.log(len);
+                console.log(ClientWord);
+                console.log(Clen);
+                console.log(COW);
+                console.log(BULL);*/
+                //var flag = false;
+                if (len == Clen)
+                {
+                    for (var i = 0; i < len; i++) {
+                        for (var j = i+1; j <len; j++) {
+                            if (UserWord[i] == ClientWord[i]) {
+                                COW = COW + 1;
+                            }
+                            else if (UserWord[i] == ClientWord[j])
+                            {
+                                BULL = 1;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    alert("Your Word is Not in " + ($("#txtWord").val()).length + "  letter")
+                }
+                $("#txtWord2").val("");
+                $("#divData").after("<h2>COW=" + COW + "   " + "BULL=" + BULL + " " + "</h2>");
+
+                if (COW == Clen && BULL == 0) {
+                    $("#divData").after("<h2>Player 2 Has Won the Game</h2>");
+                }
+                else {
+                    COW = 0;
+                    BULL = 0;
+                }
+                return;
+            });
+            $("#btnRestart").click(function () {
+                location.reload();
+            });
+        });
+    </script>
+    <style>
+        div{
+            margin:100px 900px;
+            float:left;
+        }
+        #divData{
+            float:none;
+            background-color:forestgreen;
+        }
+        .container{
+            width:400px;
+            margin-left:100px;
+        }
+        body{
+            background-color:dimgray;
+        }
+        #txtWord2{
+            visibility:hidden;
+        }
+        #btnGWSubmit {
+            visibility: hidden;
+        }
+        #btnRestart{
+            visibility:hidden;
+        }
+        h2 {
+            text-align: center;
+        }
+        .btn{
+            margin-left:60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-info">
+        <h2>Cow And Bull Game</h2><br/>
+        <input type="text" class="form-control" id="txtWord" placeholder="Enter User Word" /><br />
+        <button class="btn btn-primary" id="btnWSubmit">Submit</button>
+        <input type="text" class="form-control" id="txtWord2"/><br />
+        <button class="btn btn-primary" id="btnGWSubmit">SCORE</button>
+        <button class="btn btn-danger" id="btnRestart">RESTART</button><br/><br/>
+    </div>
+    <div class="container" id="divData">
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HomePage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function () {
+                $("#btnSubmit").click(function () {
+                    //document.getElementById("divData").innerHtml=Data;
+                    var Data = [
+                        {
+                            UserId: "132",
+                            UName: "Muthu",
+                            DOB: "4/21/2021",
+                            MOB: "9087303575"
+                        },
+                        {
+                            UserId: "132",
+                            UName: "Muthu",
+                            DOB: "4/21/2021",
+                            MOB: "9087303575"
+                        }
+                    ]
+                    var myTable = document.getElementById("tblUsers");
+                    for (var i = 0; i < Data.length; i++) {
+                        var row = myTable.insertRow(i + 1);//0th row is heading row so i+1th row like a tr
+                        var cellUserId = row.insertCell(0);//add 1st column
+                        var cellUName = row.insertCell(1);//add 2nd column
+                        var cellDOB = row.insertCell(2);
+                        var cellMOB = row.insertCell(3);
+                    }
+                    var userId = $("#txtID").val();
+                    var Name = $("#txtName").val();
+                    var Dob = $("#txtDOB").val();
+                    var Mob = $("#txtMob").val();
+                    var myuser = {
+                        UserId: userId,
+                        UName: Name,
+                        DOB: Dob,
+                        MOB: Mob
+                    }
+                    Data.push(myuser);
+                    console.log("----------------------");
+                    console.log(Data);
+                    var count = Data.length;
+                    var myTable = document.getElementById("tblUsers");
+                    var row = myTable.insertRow(count-1);//Create a tr in the last position for the array's last value
+                    var cellUserId = row.insertCell(0);//add 1st column
+                    var cellUName = row.insertCell(1);//add 2nd column
+                    var cellDOB = row.insertCell(2);
+                    var cellMOB = row.insertCell(3);
+                    cellUserId.innerHTML = Data[count - 1].UserId;
+                    cellUName.innerHTML = Data[count - 1].UName;
+                    cellDOB.innerHTML = Data[count - 1].DOB;
+                    cellMOB.innerHTML = Data[count - 1].MOB
+                });
+                $("#btnReset").click(function () {
+                    //document.getElementById("divData").innerHtml=Data;
+                    return;
+                });
+            });
+
+    </script>
+    <style>
+        body {
+            background-color: darkgrey;
+        }
+        h1 {
+            text-align: center;
+        }
+        div {
+            float:left;
+        }
+        .container {
+            width: 500px;
+            margin: 80px;
+        }
+        .btn {
+            margin-left: 100px;
+        }
+        .table{
+            margin:15px 45px;
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+        <div class="container bg-dark text-white">
+            <label class="form-group" for="txtID">UserID</label>
+            <input class="form-control" type="number" id="txtID" placeholder="UserID" /><br />
+            <label class="form-group" for="txtName">Name</label>
+            <input class="form-control" type="text" id="txtName" placeholder="Name" /><br />
+            <label class="form-group" for="txtDOB">Date of Birth</label>
+            <input class="form-control" type="date" id="txtDOB" placeholder="DOB" /><br />
+            <label class="form-group" for="txtMob">Mobile</label>
+            <input class="form-control" type="text" id="txtMob" placeholder="Mobile" /><br />
+            <button class="btn btn-primary" id="btnSubmit">Add</button>
+            <input type="reset" class="btn btn-primary" id="btnReset" /><br /><br />
+        </div>
+    <div class="container bg-dark text-white">
+        <table class="table table-info table-striped" align="center" id="tblUsers" border="1">
+            <tr>
+                <th>UserID</th>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>Phone</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

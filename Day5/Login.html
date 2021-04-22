@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            background-color: darkgrey;
+        }
+        h1{
+            text-align:center;
+        }
+        div {
+            margin:100px;
+        }
+        .container{
+            
+            width:400px;
+        }
+        .btn{
+            margin-left:60px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function () {
+                var user = [
+                    {
+                        Username: "Muthu",
+                        Password: "1234"
+                    },
+                    {
+                        Username: "Kumaran",
+                        Password: "4321"
+                    },
+                    {
+                        Username: "MKT",
+                        Password: "2143"
+                    },
+                    {
+                        Username: "TMK",
+                        Password: "3124"
+                    }
+                ]
+                $("#btnSubmit").click(
+                    function () {
+                        var username = $("#txtUName").val();
+                        var password = $("#txtPwd").val();
+                        var flag = false;
+                        for (var i = 0; i < user.length; i++) {
+                            if (user[i].Username == username && user[i].Password == password) {
+                                alert("Login Successed");
+                                $(".clsval").css("border-color", "green");
+                                flag = true;
+                                return;
+                            }
+                        }
+                        if (flag != true) {
+                            alert("Invalid UserName and Password");
+                            $(".clsval").css("border-color", "red");
+                        }
+                    });
+                $("#btnReset").click(function () {
+                    //document.getElementById("divData").innerHtml=Data;
+                    return;
+                });
+            });
+    </script>
+</head>
+<body>
+    <form action="Home.html">
+        <div class="container bg-info">
+            <h1>SIGN IN</h1>
+            <label class="form-group" for="txtUName">UserName</label>
+            <input class="form-control clsval" type="text" id="txtUName" placeholder="USERNAME" />
+            <br /><span id="errUname">
+            </span>
+            <label class="form-group" for="txtPwd">Password</label>
+            <input class="form-control clsval" type="password" id="txtPwd" placeholder="PASSWORD" />
+            <br />
+            <span id="errPass">
+            </span>
+            <button class="btn btn-success" id="btnSubmit">SIGNIN</button>
+            <input type="reset" class="btn btn-danger" id="btnReset" />
+            <br /><br />
+        </div>
+    </form>
+</body>
+</html>
