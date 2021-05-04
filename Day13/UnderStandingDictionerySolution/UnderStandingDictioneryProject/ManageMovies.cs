@@ -7,9 +7,6 @@ namespace UnderStandingDictioneryProject
 {
     class ManageMovies
     {
-        /// <summary>
-        /// Sorting and Get Element By Id Is Not Working
-        /// </summary>
         Dictionary<int, Movie> movies;
         public ManageMovies()
         {
@@ -34,14 +31,17 @@ namespace UnderStandingDictioneryProject
         }
         public int GetMovieIndexById(int id)
         {
-            int result = Convert.ToInt32(movies.ContainsKey(id));
-            return result;
+            bool result = movies.ContainsKey(id);
+            if (result == true)
+                return id;
+            else
+                return Convert.ToInt32(result);
         }
         public Movie UpdateMovieName(int id,String name)
         {
             Movie movie = null;
             int idx = GetMovieIndexById(id);
-            if(idx != 1)
+            if(idx != 0)
             {
                 movies[idx].Name = name;
                 movie = movies[idx];
@@ -76,7 +76,7 @@ namespace UnderStandingDictioneryProject
         {
             Movie movie = null;
             int idx = GetMovieIndexById(id);
-            if (idx != 1)
+            if (idx != 0)
             {
                 movies[idx].Duration = duration;
                 movie = movies[idx];
@@ -86,7 +86,7 @@ namespace UnderStandingDictioneryProject
         public void PrintMovieById(int id)
         {
             int idx = GetMovieIndexById(id);
-            if (idx != 1)
+            if (idx != 0)
                 PrintMovie(movies[idx]);
             else
                 Console.WriteLine("No Such Movies");
@@ -123,7 +123,7 @@ namespace UnderStandingDictioneryProject
         {
             if (movies.Count != 0)
             {
-                List<int> ids = movies.Keys.ToList();
+                List<Movie> ids = movies.Values.ToList();
                 ids.Sort();
                 PrintAllMovies();
             }
@@ -143,39 +143,47 @@ namespace UnderStandingDictioneryProject
         {
             Console.WriteLine("Please Enter the Movie Id for Updation");
             int id = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("What do you want to Update Name or Duration or Both");
-            String choice = Console.ReadLine();
-            String name;
-            double duration;
-            switch (choice)
+            int ids = GetMovieIndexById(id);
+            if ( ids!= 0)
             {
-                case "name":
-                    Console.WriteLine("Please enter the New Name:");
-                    name = Console.ReadLine();
-                    UpdateMovieName(id, name);
-                    break;
-                case "duration":
-                    Console.WriteLine("Please enter the New Duration");
-                    while (!double.TryParse(Console.ReadLine(),out duration))
-                    {
-                        Console.WriteLine("Invalid entry for duration.please try again");
-                    }
-                    UpdateMovieDuration(id, duration);
-                    break;
-                case "both":
-                    Console.WriteLine("Please enter the New Name:");
-                    name = Console.ReadLine();
-                    UpdateMovieName(id, name);
-                    Console.WriteLine("Please enter the New Duration");
-                    while (!double.TryParse(Console.ReadLine(), out duration))
-                    {
-                        Console.WriteLine("Invalid entry for duration.please try again");
-                    }
-                    UpdateMovieDuration(id, duration);
-                    break;
-                default:
-                    Console.WriteLine("Invalid choice");
-                    break;
+                Console.WriteLine("What do you want to Update Name or Duration or Both");
+                String choice = Console.ReadLine();
+                String name;
+                double duration;
+                switch (choice)
+                {
+                    case "name":
+                        Console.WriteLine("Please enter the New Name:");
+                        name = Console.ReadLine();
+                        UpdateMovieName(id, name);
+                        break;
+                    case "duration":
+                        Console.WriteLine("Please enter the New Duration");
+                        while (!double.TryParse(Console.ReadLine(), out duration))
+                        {
+                            Console.WriteLine("Invalid entry for duration.please try again");
+                        }
+                        UpdateMovieDuration(id, duration);
+                        break;
+                    case "both":
+                        Console.WriteLine("Please enter the New Name:");
+                        name = Console.ReadLine();
+                        UpdateMovieName(id, name);
+                        Console.WriteLine("Please enter the New Duration");
+                        while (!double.TryParse(Console.ReadLine(), out duration))
+                        {
+                            Console.WriteLine("Invalid entry for duration.please try again");
+                        }
+                        UpdateMovieDuration(id, duration);
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice");
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("No Such Movie");
             }
         }
         void PrintMenu()
