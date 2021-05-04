@@ -1,0 +1,13 @@
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingDictionerySolution\UnderStandingDictioneryProject\bin\Debug\netcoreapp3.1\UnderStandingDictioneryProject.exe
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingDictionerySolution\UnderStandingDictioneryProject\bin\Debug\netcoreapp3.1\UnderStandingDictioneryProject.deps.json
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingDictionerySolution\UnderStandingDictioneryProject\bin\Debug\netcoreapp3.1\UnderStandingDictioneryProject.runtimeconfig.json
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingDictionerySolution\UnderStandingDictioneryProject\bin\Debug\netcoreapp3.1\UnderStandingDictioneryProject.runtimeconfig.dev.json
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingDictionerySolution\UnderStandingDictioneryProject\bin\Debug\netcoreapp3.1\UnderStandingDictioneryProject.dll
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingDictionerySolution\UnderStandingDictioneryProject\bin\Debug\netcoreapp3.1\UnderStandingDictioneryProject.pdb
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingDictionerySolution\UnderStandingDictioneryProject\obj\Debug\netcoreapp3.1\UnderStandingDictioneryProject.csprojAssemblyReference.cache
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingDictionerySolution\UnderStandingDictioneryProject\obj\Debug\netcoreapp3.1\UnderStandingDictioneryProject.AssemblyInfoInputs.cache
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingDictionerySolution\UnderStandingDictioneryProject\obj\Debug\netcoreapp3.1\UnderStandingDictioneryProject.AssemblyInfo.cs
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingDictionerySolution\UnderStandingDictioneryProject\obj\Debug\netcoreapp3.1\UnderStandingDictioneryProject.csproj.CoreCompileInputs.cache
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingDictionerySolution\UnderStandingDictioneryProject\obj\Debug\netcoreapp3.1\UnderStandingDictioneryProject.dll
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingDictionerySolution\UnderStandingDictioneryProject\obj\Debug\netcoreapp3.1\UnderStandingDictioneryProject.pdb
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingDictionerySolution\UnderStandingDictioneryProject\obj\Debug\netcoreapp3.1\UnderStandingDictioneryProject.genruntimeconfig.cache
