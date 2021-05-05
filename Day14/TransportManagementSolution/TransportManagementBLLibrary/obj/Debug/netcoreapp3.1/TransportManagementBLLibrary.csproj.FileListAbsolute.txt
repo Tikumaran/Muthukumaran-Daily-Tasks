@@ -1,0 +1,9 @@
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportManagementSolution\TransportManagementBLLibrary\bin\Debug\netcoreapp3.1\TransportManagementBLLibrary.deps.json
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportManagementSolution\TransportManagementBLLibrary\bin\Debug\netcoreapp3.1\TransportManagementBLLibrary.dll
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportManagementSolution\TransportManagementBLLibrary\bin\Debug\netcoreapp3.1\TransportManagementBLLibrary.pdb
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportManagementSolution\TransportManagementBLLibrary\obj\Debug\netcoreapp3.1\TransportManagementBLLibrary.csprojAssemblyReference.cache
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportManagementSolution\TransportManagementBLLibrary\obj\Debug\netcoreapp3.1\TransportManagementBLLibrary.AssemblyInfoInputs.cache
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportManagementSolution\TransportManagementBLLibrary\obj\Debug\netcoreapp3.1\TransportManagementBLLibrary.AssemblyInfo.cs
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportManagementSolution\TransportManagementBLLibrary\obj\Debug\netcoreapp3.1\TransportManagementBLLibrary.csproj.CoreCompileInputs.cache
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportManagementSolution\TransportManagementBLLibrary\obj\Debug\netcoreapp3.1\TransportManagementBLLibrary.dll
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportManagementSolution\TransportManagementBLLibrary\obj\Debug\netcoreapp3.1\TransportManagementBLLibrary.pdb

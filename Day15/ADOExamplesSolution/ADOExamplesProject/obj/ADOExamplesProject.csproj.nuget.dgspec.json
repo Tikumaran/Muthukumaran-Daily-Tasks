@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tikum\\Desktop\\Softura training\\Muthukumaran Daily Tasks\\Day13\\UnderStandingDictionerySolution\\UnderStandingDictioneryProject\\UnderStandingDictioneryProject.csproj": {}
+    "C:\\Users\\tikum\\Desktop\\Softura training\\.NET\\ConsoleApplications\\ADOExamplesSolution\\ADOExamplesProject\\ADOExamplesProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tikum\\Desktop\\Softura training\\Muthukumaran Daily Tasks\\Day13\\UnderStandingDictionerySolution\\UnderStandingDictioneryProject\\UnderStandingDictioneryProject.csproj": {
+    "C:\\Users\\tikum\\Desktop\\Softura training\\.NET\\ConsoleApplications\\ADOExamplesSolution\\ADOExamplesProject\\ADOExamplesProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tikum\\Desktop\\Softura training\\Muthukumaran Daily Tasks\\Day13\\UnderStandingDictionerySolution\\UnderStandingDictioneryProject\\UnderStandingDictioneryProject.csproj",
-        "projectName": "UnderStandingDictioneryProject",
-        "projectPath": "C:\\Users\\tikum\\Desktop\\Softura training\\Muthukumaran Daily Tasks\\Day13\\UnderStandingDictionerySolution\\UnderStandingDictioneryProject\\UnderStandingDictioneryProject.csproj",
+        "projectUniqueName": "C:\\Users\\tikum\\Desktop\\Softura training\\.NET\\ConsoleApplications\\ADOExamplesSolution\\ADOExamplesProject\\ADOExamplesProject.csproj",
+        "projectName": "ADOExamplesProject",
+        "projectPath": "C:\\Users\\tikum\\Desktop\\Softura training\\.NET\\ConsoleApplications\\ADOExamplesSolution\\ADOExamplesProject\\ADOExamplesProject.csproj",
         "packagesPath": "C:\\Users\\tikum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tikum\\Desktop\\Softura training\\Muthukumaran Daily Tasks\\Day13\\UnderStandingDictionerySolution\\UnderStandingDictioneryProject\\obj\\",
+        "outputPath": "C:\\Users\\tikum\\Desktop\\Softura training\\.NET\\ConsoleApplications\\ADOExamplesSolution\\ADOExamplesProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tikum\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
