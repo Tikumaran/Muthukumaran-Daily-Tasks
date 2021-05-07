@@ -1,0 +1,9 @@
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportSolution\TransportDALLibrary\bin\Debug\netcoreapp3.1\TransportDALLibrary.deps.json
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportSolution\TransportDALLibrary\bin\Debug\netcoreapp3.1\TransportDALLibrary.dll
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportSolution\TransportDALLibrary\bin\Debug\netcoreapp3.1\TransportDALLibrary.pdb
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportSolution\TransportDALLibrary\obj\Debug\netcoreapp3.1\TransportDALLibrary.csprojAssemblyReference.cache
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportSolution\TransportDALLibrary\obj\Debug\netcoreapp3.1\TransportDALLibrary.AssemblyInfoInputs.cache
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportSolution\TransportDALLibrary\obj\Debug\netcoreapp3.1\TransportDALLibrary.AssemblyInfo.cs
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportSolution\TransportDALLibrary\obj\Debug\netcoreapp3.1\TransportDALLibrary.csproj.CoreCompileInputs.cache
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportSolution\TransportDALLibrary\obj\Debug\netcoreapp3.1\TransportDALLibrary.dll
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\TransportSolution\TransportDALLibrary\obj\Debug\netcoreapp3.1\TransportDALLibrary.pdb
