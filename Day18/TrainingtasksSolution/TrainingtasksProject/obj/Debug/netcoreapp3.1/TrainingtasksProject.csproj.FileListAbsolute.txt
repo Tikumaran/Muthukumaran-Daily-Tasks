@@ -1,0 +1,13 @@
+C:\Users\tikum\source\repos\TrainingtasksSolution\TrainingtasksProject\bin\Debug\netcoreapp3.1\TrainingtasksProject.exe
+C:\Users\tikum\source\repos\TrainingtasksSolution\TrainingtasksProject\bin\Debug\netcoreapp3.1\TrainingtasksProject.deps.json
+C:\Users\tikum\source\repos\TrainingtasksSolution\TrainingtasksProject\bin\Debug\netcoreapp3.1\TrainingtasksProject.runtimeconfig.json
+C:\Users\tikum\source\repos\TrainingtasksSolution\TrainingtasksProject\bin\Debug\netcoreapp3.1\TrainingtasksProject.runtimeconfig.dev.json
+C:\Users\tikum\source\repos\TrainingtasksSolution\TrainingtasksProject\bin\Debug\netcoreapp3.1\TrainingtasksProject.dll
+C:\Users\tikum\source\repos\TrainingtasksSolution\TrainingtasksProject\bin\Debug\netcoreapp3.1\TrainingtasksProject.pdb
+C:\Users\tikum\source\repos\TrainingtasksSolution\TrainingtasksProject\obj\Debug\netcoreapp3.1\TrainingtasksProject.csprojAssemblyReference.cache
+C:\Users\tikum\source\repos\TrainingtasksSolution\TrainingtasksProject\obj\Debug\netcoreapp3.1\TrainingtasksProject.AssemblyInfoInputs.cache
+C:\Users\tikum\source\repos\TrainingtasksSolution\TrainingtasksProject\obj\Debug\netcoreapp3.1\TrainingtasksProject.AssemblyInfo.cs
+C:\Users\tikum\source\repos\TrainingtasksSolution\TrainingtasksProject\obj\Debug\netcoreapp3.1\TrainingtasksProject.csproj.CoreCompileInputs.cache
+C:\Users\tikum\source\repos\TrainingtasksSolution\TrainingtasksProject\obj\Debug\netcoreapp3.1\TrainingtasksProject.dll
+C:\Users\tikum\source\repos\TrainingtasksSolution\TrainingtasksProject\obj\Debug\netcoreapp3.1\TrainingtasksProject.pdb
+C:\Users\tikum\source\repos\TrainingtasksSolution\TrainingtasksProject\obj\Debug\netcoreapp3.1\TrainingtasksProject.genruntimeconfig.cache
