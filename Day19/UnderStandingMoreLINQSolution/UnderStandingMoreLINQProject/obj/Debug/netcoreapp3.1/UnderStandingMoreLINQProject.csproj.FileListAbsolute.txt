@@ -1,0 +1,13 @@
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingMoreLINQSolution\UnderStandingMoreLINQProject\bin\Debug\netcoreapp3.1\UnderStandingMoreLINQProject.exe
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingMoreLINQSolution\UnderStandingMoreLINQProject\bin\Debug\netcoreapp3.1\UnderStandingMoreLINQProject.deps.json
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingMoreLINQSolution\UnderStandingMoreLINQProject\bin\Debug\netcoreapp3.1\UnderStandingMoreLINQProject.runtimeconfig.json
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingMoreLINQSolution\UnderStandingMoreLINQProject\bin\Debug\netcoreapp3.1\UnderStandingMoreLINQProject.runtimeconfig.dev.json
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingMoreLINQSolution\UnderStandingMoreLINQProject\bin\Debug\netcoreapp3.1\UnderStandingMoreLINQProject.dll
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingMoreLINQSolution\UnderStandingMoreLINQProject\bin\Debug\netcoreapp3.1\UnderStandingMoreLINQProject.pdb
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingMoreLINQSolution\UnderStandingMoreLINQProject\obj\Debug\netcoreapp3.1\UnderStandingMoreLINQProject.csprojAssemblyReference.cache
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingMoreLINQSolution\UnderStandingMoreLINQProject\obj\Debug\netcoreapp3.1\UnderStandingMoreLINQProject.AssemblyInfoInputs.cache
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingMoreLINQSolution\UnderStandingMoreLINQProject\obj\Debug\netcoreapp3.1\UnderStandingMoreLINQProject.AssemblyInfo.cs
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingMoreLINQSolution\UnderStandingMoreLINQProject\obj\Debug\netcoreapp3.1\UnderStandingMoreLINQProject.csproj.CoreCompileInputs.cache
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingMoreLINQSolution\UnderStandingMoreLINQProject\obj\Debug\netcoreapp3.1\UnderStandingMoreLINQProject.dll
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingMoreLINQSolution\UnderStandingMoreLINQProject\obj\Debug\netcoreapp3.1\UnderStandingMoreLINQProject.pdb
+C:\Users\tikum\Desktop\Softura training\.NET\ConsoleApplications\UnderStandingMoreLINQSolution\UnderStandingMoreLINQProject\obj\Debug\netcoreapp3.1\UnderStandingMoreLINQProject.genruntimeconfig.cache
