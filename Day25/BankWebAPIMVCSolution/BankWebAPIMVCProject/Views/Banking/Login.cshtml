@@ -1,0 +1,38 @@
+﻿@model BankWebAPIMVCProject.Models.SBAccount
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <h4>Login</h4>
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+            <form action="Login" method="post">
+                <table>
+                    <tr>
+                        <th>
+                            @Html.LabelFor(m => m.AccountNumber, new { @class = "form-control" })
+                        </th>
+                        <td>
+                            @Html.EditorFor(m => m.AccountNumber, new { @class = "form-control"})
+                        </td>
+                    </tr>
+                </table>
+                <div class="form-group">
+                    <input type="submit" value="Login" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-controller="Customer" asp-action="Create">Register</a>
+    </div>
+</body>
+</html>
