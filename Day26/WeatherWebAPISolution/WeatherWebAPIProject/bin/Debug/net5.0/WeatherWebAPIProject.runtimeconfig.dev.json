@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\tikum\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\tikum\\.nuget\\packages"
+    ]
+  }
+}
