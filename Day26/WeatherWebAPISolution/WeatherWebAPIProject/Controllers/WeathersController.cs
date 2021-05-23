@@ -31,17 +31,44 @@ namespace WeatherWebAPIProject.Controllers
         }
 
         // GET: api/Weathers/5
-        [HttpGet("{city}")]
-        public async Task<ActionResult<Weather>> GetWeather(string city)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Weather>> GetWeatherById(int id)
         {
-            var weather = _context.Weathers.SingleOrDefault(a=>a.City==city);
-
-            if (weather == null)
+            try
             {
-                return NotFound();
-            }
+                var weather = await _context.Weathers.FindAsync(id);
 
-            return weather;
+                if (weather == null)
+                {
+                    return NotFound();
+                }
+                return weather;
+            }
+            catch (Exception e)
+            {
+                _logger.LogDebug(e.Message);
+            }
+            return NoContent();
+        }
+        // GET: api/Weathers/Madurai
+       [HttpGet]
+       [Route("City")]
+        public async Task<ActionResult<IEnumerable<Weather>>> GetWeatherByCity(string city)
+        {
+            try
+            {
+                List<Weather> weather = await _context.Weathers.Where(i => i.City == city).ToListAsync();
+                if (weather == null)
+                {
+                    return NotFound();
+                }
+                return weather;
+            }
+            catch (Exception e)
+            {
+                _logger.LogDebug(e.Message);
+            }
+            return NoContent();
         }
 
         // PUT: api/Weathers/5
@@ -53,9 +80,7 @@ namespace WeatherWebAPIProject.Controllers
             {
                 return BadRequest();
             }
-
             _context.Entry(weather).State = EntityState.Modified;
-
             try
             {
                 await _context.SaveChangesAsync();
@@ -80,25 +105,38 @@ namespace WeatherWebAPIProject.Controllers
         [HttpPost]
         public async Task<ActionResult<Weather>> PostWeather(Weather weather)
         {
-            _context.Weathers.Add(weather);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetWeather", new { id = weather.Weather_ID }, weather);
+            try
+            {
+                _context.Weathers.Add(weather);
+                await _context.SaveChangesAsync();
+                return CreatedAtAction("GetWeatherByCity", new { city = weather.City }, weather);
+            }
+            catch (Exception e)
+            {
+                _logger.LogDebug(e.Message);
+            }
+            return NotFound();
         }
 
         // DELETE: api/Weathers/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteWeather(int id)
         {
-            var weather = await _context.Weathers.FindAsync(id);
-            if (weather == null)
+            try
             {
-                return NotFound();
+                var weather = await _context.Weathers.FindAsync(id);
+                if (weather == null)
+                {
+                    return NotFound();
+                }
+                _context.Weathers.Remove(weather);
+                await _context.SaveChangesAsync();
             }
-
-            _context.Weathers.Remove(weather);
-            await _context.SaveChangesAsync();
-
+            catch (Exception e)
+            {
+                _logger.LogDebug(e.Message);
+            }
+            
             return NoContent();
         }
 

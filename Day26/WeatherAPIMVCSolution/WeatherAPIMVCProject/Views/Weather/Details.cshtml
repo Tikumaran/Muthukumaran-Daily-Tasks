@@ -1,0 +1,63 @@
+﻿@model IEnumerable<WeatherAPIMVCProject.Models.Weather>
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<p>
+    <a asp-action="CityLogin">Home Page</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Weather_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weather_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HighTemp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LowTemp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.forcast)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weather_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weather_Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HighTemp) 
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LowTemp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.forcast)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "DetailByID", new {  id=item.Weather_ID }) 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

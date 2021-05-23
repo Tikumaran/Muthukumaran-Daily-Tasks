@@ -1,0 +1,38 @@
+﻿@model WeatherAPIMVCProject.Models.Weather
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>City</title>
+</head>
+<body>
+    <h4>City</h4>
+    <br />
+    <div class="row">
+        <div class="col-md-4">
+            <form action="CityLogin" method="post">
+                <table>
+                    <tr>
+                        <th>
+                            @Html.LabelFor(m => m.City, new { @class = "form-control" })
+                        </th>
+                        <td>
+                            @Html.EditorFor(m => m.City, new { @class = "form-control" })
+                        </td>
+                    </tr>
+                </table>
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-controller="Weather" asp-action="Create">Add Weather</a>
+    </div>
+</body>
+</html>
