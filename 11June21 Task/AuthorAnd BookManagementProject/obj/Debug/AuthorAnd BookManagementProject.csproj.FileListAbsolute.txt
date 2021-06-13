@@ -1,0 +1,7 @@
+C:\Users\tikum\Desktop\Softura training\Muthukumaran Daily Tasks\11June21 Task\AuthorAnd BookManagementProject\bin\Debug\AuthorAnd BookManagementProject.exe.config
+C:\Users\tikum\Desktop\Softura training\Muthukumaran Daily Tasks\11June21 Task\AuthorAnd BookManagementProject\bin\Debug\AuthorAnd BookManagementProject.exe
+C:\Users\tikum\Desktop\Softura training\Muthukumaran Daily Tasks\11June21 Task\AuthorAnd BookManagementProject\bin\Debug\AuthorAnd BookManagementProject.pdb
+C:\Users\tikum\Desktop\Softura training\Muthukumaran Daily Tasks\11June21 Task\AuthorAnd BookManagementProject\obj\Debug\AuthorAnd BookManagementProject.csproj.CoreCompileInputs.cache
+C:\Users\tikum\Desktop\Softura training\Muthukumaran Daily Tasks\11June21 Task\AuthorAnd BookManagementProject\obj\Debug\AuthorAnd BookManagementProject.exe
+C:\Users\tikum\Desktop\Softura training\Muthukumaran Daily Tasks\11June21 Task\AuthorAnd BookManagementProject\obj\Debug\AuthorAnd BookManagementProject.pdb
+C:\Users\tikum\Desktop\Softura training\Muthukumaran Daily Tasks\11June21 Task\AuthorAnd BookManagementProject\obj\Debug\AuthorAnd BookManagementProject.csprojAssemblyReference.cache
