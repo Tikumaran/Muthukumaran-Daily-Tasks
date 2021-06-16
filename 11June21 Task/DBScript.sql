@@ -86,10 +86,13 @@ End
 
 select b.BookID,b.Title,a.AuthorName,b.Price from tbl_Books b join tbl_author a on
 b.AuthorID=a.AuthorID
+where BookID=8
 
 insert into tbl_books values('The MK and KMM Family seried',(select AuthorID from tbl_author where AuthorName='MK'),200)
 
 select *from tbl_author
+
+update tbl_Books set Title='Two States',AuthorID=(select AuthorID from tbl_author where AuthorName='Chetan Bhaget'),Price=350 where BookID=8
 
 --1.--
 exec sp_InsertBook 'Origin',7,150
@@ -107,4 +110,4 @@ exec sp_InsertAuthor 'Jayakanthan'
 exec  sp_UpdateAuthor 8,'Jayakanthan.JK'
 
 --6.--
-exec  sp_DeleteAuthor 1008
+exec  sp_DeleteAuthor 10
