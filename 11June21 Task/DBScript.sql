@@ -34,12 +34,14 @@ End
 
 --2. Update Book--
 
-create proc sp_UpdateBook
+alter proc sp_UpdateBook
 @BookID int,
+@Title varchar(50),
+@AuthorID int,
 @Price money
 as
 Begin
-update tbl_Books set Price=@Price where BookID=@BookID
+update tbl_Books set Title=@Title,AuthorID=@AuthorID,Price=@Price where BookID=@BookID
 End
 
 --3. Delete Book--
@@ -82,7 +84,10 @@ End
 
 --SP Testing--
 
-select * from tbl_Books
+select b.BookID,b.Title,a.AuthorName,b.Price from tbl_Books b join tbl_author a on
+b.AuthorID=a.AuthorID
+
+insert into tbl_books values('The MK and KMM Family seried',(select AuthorID from tbl_author where AuthorName='MK'),200)
 
 select *from tbl_author
 
