@@ -1,0 +1,43 @@
+﻿@using System.Data
+@model System.Data.DataTable
+@{ 
+   Layout = null; 
+ }
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+</head>
+<body>
+    <div>
+        <form method="post" name="Display">
+            <h2>Home Page</h2>
+            <br />
+            @Html.ActionLink("Add Movie", "Insert")
+            @Html.ActionLink("Update Duration", "Edit")
+            @{ if (Model.Rows.Count > 0)
+                {
+    <br /><br />
+                    <table border="1">
+                        <thead style="background-color:lightblue;">
+                            <tr>
+                                <th>Movie Id</th>
+                                <th>Movie Name</th>
+                                <th>Movie Duration</th>
+                            </tr>
+                        </thead>
+                        @foreach (DataRow dr in Model.Rows)
+                        {
+        <tr>
+            <td>@dr["Movie_Id"].ToString()</td>
+            <td>@dr["Movie_Name"].ToString()</td>
+            <td>@dr["Duration"].ToString()</td>
+    </tr>}
+                    </table> } }
+        </form>
+    </div>
+</body>
+</html>
