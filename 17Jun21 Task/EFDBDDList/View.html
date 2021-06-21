@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //$("#p1").mouseenter(function () {
+            //    alert("Your Mouse Enter the Paragragh")
+            //})
+            $("#p1").mouseleave(function () {
+                $(this).css("background-color","aqua")
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <h3>Check</h3>
+        <p id="p1">
+            Something
+        </p>
+    </div>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+            <li>Logout</li>
+        </ul>
+        <script>
+            $("li").click(function () {
+                alert($(this).text());
+            })
+        </script>
+    </div>
+</body>
+</html>

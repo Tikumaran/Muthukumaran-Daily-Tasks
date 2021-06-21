@@ -1,0 +1,11 @@
+﻿@model ExploreProductsDBDDProject.Models.Product
+
+<option value="">-- Select Product --</option>
+
+@if (ViewBag.ProductList != null)
+{
+    foreach (var item in ViewBag.SubList)
+    {
+        <option value=@item.Value>@item.Text</option>
+    }
+}

@@ -1,0 +1,55 @@
+﻿@model ExploreProductsDBDDProject.Models.ProductSubModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Content/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#ProductCategoryId").change(function () {
+            var ProductCategoryId = $(this).val();
+            debugger
+            $.ajax({
+                type: "post",
+                url: "/Product/GetSubProducts?ProductCategoryId=" + ProductCategoryId,
+                contentType: "html",
+                success: function (response) {
+                    debugger
+                    $("#ProductSubCategoryId").empty();
+                    $("#ProductSubCategoryId").append(response);
+                }
+            })
+        })
+        $("#ProductSubCategoryId").change(function () {
+            var ProductSubCategoryId = $(this).val();
+            debugger
+            $.ajax({
+                type: "post",
+                url: "/Product/GetProduct?ProductSubCategoryId=" + ProductSubCategoryId,
+                contentType: "html",
+                success: function (response) {
+                    debugger
+                    $("#ProductId").empty();
+                    $("#ProductId").append(response);
+                }
+            })
+        })
+    })
+</script>
+<h3>Index</h3>
+<div class="container">
+    @if (ViewBag.ProductCat != null)
+    {
+       
+            <label>Select Category Product</label>
+            @Html.DropDownListFor(x => x.ProductCategoryID,ViewBag.ProductCat as SelectList, "--Select Category--", new { @class = "form-control" })
+
+    }
+            <label>Select Sub Category Product</label>
+            @Html.DropDownListFor(x => x.ProductSubCategoryID,ViewBag.ProductSub as SelectList, "--Select SubCategory--", new { @class = "form-control" })
+        
+        <label>Product</label>
+        @Html.DropDownListFor(x => x.ProductID, ViewBag.Lists as SelectList, "--Select product--", new { @class = "form-control" })
+    
+</div>
+
